@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 class CampaignIndex extends React.Component {
     static async getInitialProps() {
         const campaigns = await factory.methods.getDeployedCampaigns().call()
-        return { campaigns };
+        return {campaigns};
     }
 
     renderCampaigns() {

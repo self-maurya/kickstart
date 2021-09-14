@@ -12,9 +12,9 @@ const fileNames = fso.readdirSync(contractsPath);
 const input = fileNames.reduce(
     (input, fileName) => {
         const filePath = path.resolve(contractsPath, fileName)
-        const source =  fs.readFileSync(filePath, 'utf8');
-        return { sources: { ...input.sources, [fileName]: source } };
-    }, { sources: {} }
+        const source = fs.readFileSync(filePath, 'utf8');
+        return {sources: {...input.sources, [fileName]: source}};
+    }, {sources: {}}
 );
 
 const output = solc.compile(input, 1).contracts;

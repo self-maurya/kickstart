@@ -2,7 +2,7 @@ import {Menu} from "semantic-ui-react";
 
 const Header = (props) => {
     return (
-        <Menu style={{ marginTop: '20px' }}>
+        <Menu style={{marginTop: '20px'}}>
             <Menu.Item>CrowdCoin</Menu.Item>
 
             <Menu.Menu position='right'>
