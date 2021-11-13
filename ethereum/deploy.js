@@ -17,7 +17,8 @@ const deploy = async () => {
         .send({from: accounts[0], gas: 1000000, gasPrice: '5000000000'});
 
     console.log('Contract deployed to', result.options.address);
-    // 0xDc6E38a8Ea49512d42c8f9755e483C4eD93E2191
+    // 0xDc6E38a8Ea49512d42c8f9755e483C4eD93E2191 -> initial
+    // 0xE07Ba7892b114D7485fA235a24e41feF699DAD48 -> updated
 }
 
 deploy();
